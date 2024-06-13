@@ -1,0 +1,21 @@
+{%extends "basic.html" %}
+{% block title %}
+Flask Tutorial
+{% endblock %}
+
+{% block content %}
+<h1> This is Flask Framework</h1>
+{% for user in users %}
+<h4>{{user.username}}</h4>
+<p>{{user.email}}</p>
+
+
+{% if user.id==1%}
+<h4>{{user.name}}</h4>
+{% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+@CopyRight 2023-2024
+{%endblock %}

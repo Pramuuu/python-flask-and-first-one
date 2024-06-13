@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Profile</title>
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+<body>
+    <div class="displaycontent" align="center">
+        <div class="displaytop">
+            <h1>Profile Details</h1>
+        </div>
+        <br><br>
+        <div class="displaybottom">
+            <p>Username: {{ account.username }}</p>
+            <p>Email: {{ account.email }}</p>
+            <p>Organisation: {{ account.organisation }}</p>
+            <p>Address: {{ account.address }}</p>
+            <p>City: {{ account.city }}</p>
+            <p>State: {{ account.state }}</p>
+            <p>Country: {{ account.country }}</p>
+            <p>Postal Code: {{ account.postalcode }}</p>
+            <br>
+            <a class="worddark" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
+

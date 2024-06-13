@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+<body>
+    <div class="updatecontent" align="center">
+        <div class="updatetop">
+            <h1>Update Profile</h1>
+        </div>
+        <br><br>
+        <div class="updatebottom">
+            <form action="{{ url_for('update') }}" method="post" autocomplete="off">
+                <div class="msg">{{ msg }}</div>
+                <input type="text" name="username" placeholder="Enter Your Username" class="textbox" id="username" required><br><br>
+                <input type="password" name="password" placeholder="Enter Your Password" class="textbox" id="password" required><br><br>
+                <input type="email" name="email" placeholder="Enter Your Email" class="textbox" id="email" required><br><br>
+                <input type="text" name="organisation" placeholder="Enter Your Organisation" class="textbox" id="organisation" required><br><br>
+                <input type="text" name="address" placeholder="Enter Your Address" class="textbox" id="address" required><br><br>
+                <input type="text" name="city" placeholder="Enter Your City" class="textbox" id="city" required><br><br>
+                <input type="text" name="state" placeholder="Enter Your State" class="textbox" id="state" required><br><br>
+                <input type="text" name="country" placeholder="Enter Your Country" class="textbox" id="country" required><br><br>
+                <input type="text" name="postalcode" placeholder="Enter Your Postal Code" class="textbox" id="postalcode" required><br><br>
+                <input type="submit" class="btn" value="Update">
+            </form><br><br>
+            <a class="worddark" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

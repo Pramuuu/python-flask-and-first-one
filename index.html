@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+<body>
+    <div class="indexcontent" align="center">
+        <div class="indextop">
+            <h1>Welcome {{ session.username }}</h1>
+        </div>
+        <br><br>
+        <div class="indexbottom">
+            <p>{{ msg }}</p><br>
+            <a class="worddark" href="{{ url_for('display') }}">View Profile</a> |
+            <a class="worddark" href="{{ url_for('update') }}">Update Profile</a> |
+            <a class="worddark" href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
